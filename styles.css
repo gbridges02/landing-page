@@ -34,7 +34,6 @@ header {
 
 header ul {
     display: flex;
-    gap: 1rem;
     list-style: none;
     flex-basis: 60rem;
     align-items: center;
@@ -48,8 +47,22 @@ header ul {
 
 .header-link {
     font-size: 18px;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
 }
 
+.header-link:hover {
+    background-color: #3d4b5d;
+}
+
+.header-link:active {
+    background-color: #151d28;
+}
 .intro-container {
     display: flex;
     justify-content: center;
@@ -83,12 +96,23 @@ header ul {
     margin-bottom: 0.5rem;
 }
 
-.intro-text button {
+.sign-up {
     padding: 0.5rem 2rem;
     color: #E5E7EB;
     background-color: #3882F6;
     border-radius: 0.5rem;
     border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sign-up:hover {
+    background-color: #5a94f2;
+}
+
+.sign-up:active {
+    background-color: #1d5fca;
 }
 
 .intro-image {
@@ -191,13 +215,8 @@ h2 {
     font-size: 0.875rem;
 }
 
-.sign-up {
-    color: #E5E7EB;
+#border-sign-up {
     border: 2px solid #E5E7EB;
-    background-color: #3882F6;
-    border-radius: 0.5rem;
-    padding: 0.25rem 1.5rem;
-    font-weight: 700;
 }
 
 footer {
