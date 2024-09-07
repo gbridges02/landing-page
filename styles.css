@@ -24,6 +24,7 @@ body {
 .page {
     flex: 1;
 }
+
 header {
     display: flex;
     justify-content: center;
@@ -56,13 +57,16 @@ header ul {
 }
 
 .intro-content {
-    flex-basis: 60rem;
+    flex: 1 60rem;
     display: flex;
     margin: 4rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 0;
 }
 
 .intro-text {
-    flex-basis: 50%;
+    flex-basis: 30rem;
     padding-right: 2rem;
 }
 
@@ -88,11 +92,12 @@ header ul {
 }
 
 .intro-image {
-    flex-basis: 50%;
+    flex-basis: 30rem;
     display: flex;
     background-color: rgb(99, 100, 110);
     justify-content: center;
     align-items: center;
+    min-height: 244px;
 }
 
 .dark-background {
@@ -118,19 +123,21 @@ h2 {
 .illustrations {
     display: flex;
     margin: 0 auto;
-    width: 50rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-bottom: 2rem;
-    gap: 1rem;
+    flex: 0 1;
+    max-width: 50rem;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .illustration-container {
-    flex-basis: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1 0 10rem;
 }
 
 .illustration {
